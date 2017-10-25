@@ -87,6 +87,11 @@ class Program
 
 ```
 
+## Roadmap
+
+* Fixed 64 and Fixed 128 data types
+* All tests used for Real precision numbers enabled and configured for Fixed precision numbers with suitable margins for error and all passing.
+
 ## License
 
 Abacus is licensed under the **[MIT License][mit]**; you may not use this software except in compliance with the License.
