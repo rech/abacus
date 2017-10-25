@@ -89,7 +89,9 @@ class Program
 
 ## Roadmap
 
-* Fixed 64 and Fixed 128 data types
+* Fixed 64 bit precision number data type
+* Fixed 128 bit precision number data type
+* Half precision real number data type
 * All tests used for Real precision numbers enabled and configured for Fixed precision numbers with suitable margins for error and all passing.
 
 ## License
