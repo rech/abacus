@@ -28,7 +28,8 @@ Abacus is available as a stand-alone library via [nuget][nuget].  Here's an exam
 </packages>
 ```
 
-Alternatively, as all code associated with each of Abacus' supported levels of precision gets generated into a single C# source file, it is easy to simply copy the appropriate [Abacus.*.cs][sources] file for the precision you need straight into your project.
+Alternatively, as all code associated with each of Abacus' supported levels of precision gets generated into a single C# source file, it is easy to simply copy the appropriate [Abacus.XYZ.cs][sources] file for the precision you need straight into your project.
+
 ## So, what types are actually supported?
 
 Abacus provides implementations of the following data types:
