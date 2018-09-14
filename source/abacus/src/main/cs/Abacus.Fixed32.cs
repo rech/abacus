@@ -4,7 +4,7 @@
 // │  /  /_\  \| __ \\__  \ _/ ___\|  |  \/  ___/                           │ \\
 // │ /    |    \ \_\ \/ __ \\  \___|  |  /\___ \                            │ \\
 // │ \____|__  /___  (____  /\___  >____//____  >                           │ \\
-// │         \/    \/     \/     \/           \/                            │ \\
+// │         \/    \/     \/     \/           \/  v0.9.2                    │ \\
 // │                                                                        │ \\
 // │ Fast, efficient, cross platform, cross precision, maths library.       │ \\
 // │                                                                        │ \\
@@ -23,10 +23,8 @@
 // │       \________________________________________________________/       │ \\
 // │                                                                        │ \\
 // ├────────────────────────────────────────────────────────────────────────┤ \\
-// │ Copyright © 2012 - 2015 ~ Blimey3D (http://www.blimey.io)              │ \\
+// │ Copyright © 2012 - 2018 Ash Pook                                       │ \\
 // ├────────────────────────────────────────────────────────────────────────┤ \\
-// │ Authors:                                                               │ \\
-// │ ~ Ash Pook (http://www.ajpook.com)                                     │ \\
 // ├────────────────────────────────────────────────────────────────────────┤ \\
 // │ Permission is hereby granted, free of charge, to any person obtaining  │ \\
 // │ a copy of this software and associated documentation files (the        │ \\
@@ -47,8 +45,6 @@
 // │ TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE       │ \\
 // │ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                 │ \\
 // └────────────────────────────────────────────────────────────────────────┘ \\
-
-/** Abacus version: 0.9.2 */
 
 #define VARIANTS_ENABLED
 
