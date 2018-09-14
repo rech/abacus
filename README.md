@@ -1,8 +1,9 @@
 ## Abacus
 
-[![Build Status](https://travis-ci.org/sungiant/abacus.png?branch=master)](https://travis-ci.org/sungiant/abacus)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/sungiant/abacus/master/LICENSE)
-[![Nuget Version](https://img.shields.io/nuget/v/Abacus.svg)](https://www.nuget.org/packages/Abacus)
+[![Build Status](https://travis-ci.org/sungiant/abacus.png?branch=master)][status]
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)][mit]
+[![Nuget Version](https://img.shields.io/nuget/v/Abacus.svg)][nuget]
+[![Chat](https://img.shields.io/badge/gitter-join%20chat-green.svg)][chat]
 
 ## Overview
 
@@ -18,7 +19,7 @@ Abacus aims to provide all of the features of the XNA maths library whilst also 
 
 ## Getting started
 
-Abacus is available as a stand-alone library via [nuget][abacus_nuget].  Here's an example nuget `packages.config` file that pulls in Abacus:
+Abacus is available as a stand-alone library via [nuget][nuget].  Here's an example nuget `packages.config` file that pulls in Abacus:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -105,28 +106,26 @@ This roadmap gives some insight into what's next for the project.  We'd like to 
 
 #### Version 0.9.x [COMPLETE]
 
-* Full support for `float` and `double`.
-* Full test coverage.
-* Proof of concept - Fixed 32 bit precision number data type.
+- [x] Full support for `float` and `double`.
+- [x] Full test coverage.
+- [x] Proof of concept - Fixed 32 bit precision number data type.
 
 #### Version 1.0.x
 
-* Finalised Fixed 32 bit precision number data type.
-* Full unit test coverage configured with appropriate margins of error.
-
+- [ ] Finalised Fixed 32 bit precision number data type.
+- [ ] Full unit test coverage configured with appropriate margins of error.
 
 #### Version 1.1.x
 
-* Fixed 64 bit precision number data type.
-* Fixed 128 bit precision number data type.
-* Full unit test coverage configured with appropriate margins of error.
-
+- [ ] Fixed 64 bit precision number data type.
+- [ ] Fixed 128 bit precision number data type.
+- [ ] Full unit test coverage configured with appropriate margins of error.
 
 #### Version 1.2.x
 
-* Half precision floating point number data type.
-* Quadruple precision floating point number data type.
-* Full unit test coverage configured with appropriate margins of error.
+- [ ] Half precision floating point number data type.
+- [ ] Quadruple precision floating point number data type.
+- [ ] Full unit test coverage configured with appropriate margins of error.
 
 
 ## Technical Details
@@ -143,7 +142,7 @@ Abacus is named after a maths library that Ash worked with in the past when he w
 
 ## Contributing
 
-If you find a bug or have an issue please reach out via the GitHub Issue tracking system.
+If you find a bug or have an issue please reach out via the GitHub Issue tracking system.  If you are using Abacus in a project of you own please show your support and let us know on [Gitter][chat].
 
 ## License
 
@@ -156,10 +155,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 [mit]: https://raw.githubusercontent.com/sungiant/abacus/master/LICENSE
-[abacus_nuget]: https://www.nuget.org/packages/Abacus/
+[nuget]: https://www.nuget.org/packages/Abacus/
 [sources]: https://github.com/sungiant/abacus/tree/master/source/abacus/src/main/cs
 [xna]: https://en.wikipedia.org/wiki/Microsoft_XNA
 [hacker]: https://www.hackerrank.com
 [br]: https://en.wikipedia.org/wiki/Black_Rock_Studio
+[status]: https://travis-ci.org/sungiant/abacus
+[chat]: https://gitter.im/sungiant/abacus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 
 
