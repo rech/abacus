@@ -4,18 +4,30 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/sungiant/abacus/master/LICENSE)
 [![Nuget Version](https://img.shields.io/nuget/v/Abacus.svg)](https://www.nuget.org/packages/Abacus)
 
-
 ## Overview
 
-Abacus is a 3D maths library for .NET and Mono, built with a primary focus on performance and efficiency.  Abacus is ideal for use developing real-time 3D applications and deterministic network simulations.
+Abacus is a zero-dependency cross-precision 3D maths library for .NET and Mono, built with a primary focus on performance and efficiency.  Abacus is ideal for use developing real-time 3D applications and deterministic network simulations.
 
 ## Why?
 
-Remember [XNA][xna]?  It was a legendary framework for building games and 3D applications; part of the framework consisted of an excellent little maths library for use with floating point numbers.
+Remember [XNA][xna]?  It was a popular framework for building games and 3D applications using C#; part of the framework consisted of an excellent maths library for use with floating point numbers.
 
-On a number of occasions I found myself wanting to use that XNA maths library, perhaps I was solving a challenge on [HackerRank][hacker], writing a software ray tracer, or building a network simulation, however XNA had a number of dependencies and more often than not I wanted to work with something other than 32 bit floating point numbers.  Abacus aims to provide all of the cool features of the XNA maths library across multiple levels of precision; all in a single stand-alone package.
+On a number of occasions we found ourselves wanting to use XNA's maths library in C# projects of our own, yet we didn't want to be tied to the prerequisites imposed by XNA.  We also wanted the ability to use the same set of functionality with with differing levels of precision, i.e. a library that would expose the same API for working with 32-bit floating point numbers as it did for working with 64-bit floating point numbers and even 64-bit fixed point numbers.
 
-Not only does Abacus consistently support mathematical operations and data types for `float` and `double` precision numbers, but it also provides it's own implementations of various fixed point number formats too, consistently supports mathematical operations and data types for them also.
+Abacus aims to provide all of the features of the XNA maths library whilst also supporting multiple levels of precision.
+
+## Getting started
+
+Abacus is available as a stand-alone library via [nuget][abacus_nuget].  Here's an example nuget `packages.config` file that pulls in Abacus:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="Abacus" version="0.9.2" targetFramework="net45" />
+</packages>
+```
+
+Alternatively, as all code associated with each of Abacus' supported levels of precision gets generated into a single C# source file, it is easy to simply copy the appropriate [Abacus.*.cs][sources] file for the precision you need straight into your project.
 
 ## So, what types are actually supported?
 
@@ -31,34 +43,30 @@ consistently across the following precisions:
 
 * `Single` (`float`)
 * `Double` (`double`)
-* `Fixed32` (under test)
-* `Fixed64` (coming soon)
-* `Fixed128` (coming soon)
-* `Half` (coming soon)
+* `Fixed32` (proof of concept)
 
-## About the name
 
-On face value "Abacus" seems like a pretty obvious choice for a name of a maths library, however the roots of the name run a little deeper; Abacus is, in point of fact, named after a maths library I worked with in the past when I was a programmer at [Black Rock Studio][br].  The name is especially appropriate given that this Abacus is fairly similar to the maths library in the XNA framework, which in-turn was fairly similar to Black Rock's Abacus; all of which stands to reason given that both XNA maths and Black Rock Abacus were partially written by [Shawn Hargreaves][sh].
+## Status
 
-## Getting started
+One goal of the project is for Abacus to consistently support mathematical operations and data types for more than just `float` and `double` precision numbers.  Abacus is being built to provide it's own implementations for various fixed point number formats and additional floating point number formats:
 
-Abacus is available as a stand-alone library via [nuget][abacus_nuget].  Here's an example nuget `packages.config` file that pulls in Abacus:
+* `Fixed32`
+* `Fixed64`
+* `Fixed128`
+* `Half`
+* `Quadruple`
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<packages>
-  <package id="Abacus" version="0.9.2" targetFramework="net45" />
-</packages>
-```
+Currently full support for these types with full unit test coverage is the next step on the roadmap.
 
-Alternatively, given that each supported precision level generates a single source file, it is easy to simply copy the [Abacus.*.cs][sources] file for the precision you need straight into your project.
+At this stage a working  `Fixed32` type is provided as a proof of concept, however, the unit tests associated with the type are currently disabled as in their present form they do not .
+
 
 ## Example usage
 
 ```cs
 /**
  * Choose which level of precision to use simply by
- * commenting out all but the appropriate using
+ * commenting out all but the appropriate 'using'
  * statement:
  */
 
@@ -87,12 +95,44 @@ class Program
 
 ```
 
+
 ## Roadmap
 
-* Fixed 64 bit precision number data type
-* Fixed 128 bit precision number data type
-* Half precision real number data type
-* All tests used for Real precision numbers enabled and configured for Fixed precision numbers with suitable margins for error and all passing.
+This roadmap gives some insight into what's next for the project.  We'd like to spend more time working on this project and get Abacus to version 1.2.x; if this is something you'd like to see happen too please show your support for the project by giving it a Github star.
+
+#### Version 0.9.x [COMPLETE]
+
+* Full support for `float` and `double`.
+* Full test coverage.
+
+#### Version 1.0.x
+
+* Fixed 32 bit precision number data type.
+* Full unit test coverage configured with appropriate margins of error.
+
+
+#### Version 1.1.x
+
+* Fixed 64 bit precision number data type.
+* Fixed 128 bit precision number data type.
+* Full unit test coverage configured with appropriate margins of error.
+
+
+#### Version 1.2.x
+
+* Half precision floating point number data type.
+* Quadruple precision floating point number data type.
+* Full unit test coverage configured with appropriate margins of error.
+
+
+## Technical Details
+
+Authoring a consistent API for Abacus across multiple levels of precision presents techinical challenge because the C# language has limited support for experessing constraints for generics; for this reason Abacus has been built using a templatization mechanism to ensure a consitent API across precisions, this is a little cumbersome to work from an author's perspective, however, as a user it works well and brings the added benefit that the entire libary is generated into a small set of files (one for each level of precision), making Abacus easy to embed into any C# project.
+
+## About the name
+
+Abacus is named after a maths library that Ash worked with in the past when he was a programmer at [Black Rock Studio][br].
+
 
 ## License
 
@@ -109,5 +149,6 @@ limitations under the License.
 [sources]: https://github.com/sungiant/abacus/tree/master/source/abacus/src/main/cs
 [xna]: https://en.wikipedia.org/wiki/Microsoft_XNA
 [hacker]: https://www.hackerrank.com
-[sh]: http://www.shawnhargreaves.com
 [br]: https://en.wikipedia.org/wiki/Black_Rock_Studio
+
+
