@@ -4,6 +4,7 @@ set -e
 set -x
 
 echo 'Setting up the docs script...'
+ROOT_DIR=$(pwd)
 mkdir docs
 cd docs
 git clone -b gh-pages https://git@$GH_REPO_REF
@@ -14,7 +15,7 @@ git config user.email "travis@travis-ci.org"
 rm -rf *
 echo "" > .nojekyll
 echo 'Generating Doxygen code documentation...'
-doxygen doxygen.conf 2>&1 | tee doxygen.log
+doxygen ${ROOT_DIR}/doxygen.conf 2>&1 | tee doxygen.log
 
 if [ -d "html" ] && [ -f "html/index.html" ]; then
     echo 'Uploading documentation to the gh-pages branch...'
