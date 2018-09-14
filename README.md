@@ -104,10 +104,11 @@ This roadmap gives some insight into what's next for the project.  We'd like to 
 
 * Full support for `float` and `double`.
 * Full test coverage.
+* Proof of concept - Fixed 32 bit precision number data type.
 
 #### Version 1.0.x
 
-* Fixed 32 bit precision number data type.
+* Finalised Fixed 32 bit precision number data type.
 * Full unit test coverage configured with appropriate margins of error.
 
 
