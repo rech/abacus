@@ -7,17 +7,24 @@ echo 'Setting up the docs script...'
 
 doxygen doxygen.conf
 
-mkdir temp/
-cd temp/
+ls -lah docs/
 
-git clone -b gh-pages https://git@$GH_REPO_REF
-cd $GH_REPO_NAME
+git clone -b gh-pages https://git@$GH_REPO_REF temp
+
+cd temp
+
 git config --global push.default simple
 git config user.name "Travis CI"
 git config user.email "travis@travis-ci.org"
 rm -rf *
 echo "" > .nojekyll
-mv ../docs/html/ .
+
+cd ../
+
+mv docs/html/* temp/
+
+
+cd temp
 
 if [[ `git status --porcelain` ]] && [ -f "index.html" ]; then
     echo 'Uploading documentation to the gh-pages branch...'
