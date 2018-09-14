@@ -1,5 +1,6 @@
 #!/bin/bash
 
-set -x #echo on
+set -e
+set -x
 
 mono packages/NUnit.Runners.*/tools/nunit-console.exe bin/abacus.test.dll

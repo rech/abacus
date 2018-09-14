@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -x #echo on
+set -e
+set -x
 
 rm -rf packages/
 

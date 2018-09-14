@@ -8,7 +8,6 @@ branches:
 env:
   global:
     - GH_REPO_NAME: abacus
-    - DOXYFILE: $TRAVIS_BUILD_DIR/doxygen.conf
     - GH_REPO_REF: github.com/sungiant/abacus.git
 addons:
   apt:
@@ -23,5 +22,5 @@ before_script:
 script:
   - sh build.sh
   - sh test.sh
-after_success:
+after_script:
   - sh docs.sh

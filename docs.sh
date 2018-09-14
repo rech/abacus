@@ -1,6 +1,8 @@
 #!/bin/sh
 
 set -e
+set -x
+
 echo 'Setting up the docs script...'
 mkdir docs
 cd docs
@@ -12,7 +14,7 @@ git config user.email "travis@travis-ci.org"
 rm -rf *
 echo "" > .nojekyll
 echo 'Generating Doxygen code documentation...'
-doxygen $DOXYFILE 2>&1 | tee doxygen.log
+doxygen doxygen.conf 2>&1 | tee doxygen.log
 
 if [ -d "html" ] && [ -f "html/index.html" ]; then
     echo 'Uploading documentation to the gh-pages branch...'
