@@ -2,10 +2,26 @@ language: csharp
 sudo: false
 mono:
   - latest
+branches:
+  except:
+    - gh-pages
+env:
+  global:
+    - GH_REPO_NAME: abacus
+    - DOXYFILE: $TRAVIS_BUILD_DIR/doxygen.conf
+    - GH_REPO_REF: github.com/sungiant/abacus.git
+addons:
+  apt:
+    packages:
+      - doxygen
+      - doxygen-doc
+      - doxygen-gui
+      - graphviz
 before_script:
   - sh nu.sh
   - sh gen.sh
 script:
   - sh build.sh
   - sh test.sh
-
+after_success:
+  - sh docs.sh
