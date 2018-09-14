@@ -28,7 +28,6 @@ Abacus is available as a stand-alone library via [nuget][abacus_nuget].  Here's 
 ```
 
 Alternatively, as all code associated with each of Abacus' supported levels of precision gets generated into a single C# source file, it is easy to simply copy the appropriate [Abacus.*.cs][sources] file for the precision you need straight into your project.
-
 ## So, what types are actually supported?
 
 Abacus provides implementations of the following data types:
@@ -47,6 +46,10 @@ consistently across the following precisions:
 
 
 ## Status
+
+Is Abacus ready to be used?  Yes indeed.
+
+Abacus currently runs 638 unit tests with each build and has complete test coverage over both 32-bit and 64-bit floating point precision (`float` and `double`).
 
 One goal of the project is for Abacus to consistently support mathematical operations and data types for more than just `float` and `double` precision numbers.  Abacus is being built to provide it's own implementations for various fixed point number formats and additional floating point number formats:
 
@@ -133,6 +136,10 @@ Authoring a consistent API for Abacus across multiple levels of precision presen
 ## About the name
 
 Abacus is named after a maths library that Ash worked with in the past when he was a programmer at [Black Rock Studio][br].
+
+## Contributing
+
+If you find a bug or have an issue please reach out via the GitHub Issue tracking system.
 
 
 ## License
