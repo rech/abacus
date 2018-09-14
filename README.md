@@ -1,4 +1,4 @@
-## Abacus
+# Abacus
 
 [![Build Status](https://travis-ci.org/sungiant/abacus.png?branch=master)][status]
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)][mit]
