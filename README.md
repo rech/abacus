@@ -105,7 +105,7 @@ class Program
 
 ## Roadmap
 
-This roadmap gives some insight into what's next for the project.  We'd like to spend more time working on this project and get Abacus to version 1.2.x; if this is something you'd like to see happen too please show your support for the project by giving it a Github star and let us know on [Gitter][chat].
+This roadmap gives some insight into what's next for the project.  We'd like to spend more time working on this project and get Abacus to version 1.6.x; if this is something you'd like to see happen too please show your support for the project by giving it a Github star and let us know on [Gitter][chat].
 
 #### Version 0.9.x [COMPLETE]
 
@@ -130,7 +130,7 @@ New data types
 - [ ] Ray type (`Ray`).
 - [ ] Full unit test coverage.
 
-#### Version 1.2.x
+#### Version 1.3.x
 
 New 3D bounding data types.
 
@@ -139,7 +139,7 @@ New 3D bounding data types.
 - [ ] Frustum type (`Frustum`).
 - [ ] Full unit test coverage.
 
-#### Version 1.3.x
+#### Version 1.4.x
 
 New 2D bounding data types.
 
@@ -147,7 +147,7 @@ New 2D bounding data types.
 - [ ] Quad type (`Quad`).
 - [ ] Full unit test coverage.
 
-#### Version 1.4.x
+#### Version 1.5.x
 
 Increased support for fixed point.
 
@@ -155,7 +155,7 @@ Increased support for fixed point.
 - [ ] Fixed 128 bit precision number data type (`Fixed128`).
 - [ ] Full unit test coverage configured with appropriate margins of error.
 
-#### Version 1.5.x
+#### Version 1.6.x
 
 Additional support for floating point.
 
