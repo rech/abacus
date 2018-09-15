@@ -169,7 +169,7 @@ Additional support for floating point.
 
 ## Technical Details
 
-Authoring a consistent API for Abacus across multiple levels of precision presents techinical challenge because the C# language has limited support for experessing constraints for generics; for this reason Abacus has been built using a templatization mechanism to ensure a consitent API across precisions, this is a little cumbersome to work from an author's perspective, however, as a user it works well and brings the added benefit that the entire libary is generated into a small set of files (one for each level of precision), making Abacus easy to embed into any C# project.
+Authoring a consistent API for Abacus across multiple levels of precision presents techinical challenge because the C# language has limited support for experessing constraints for generics; for this reason Abacus has been built using a templatization mechanism to ensure a consitent API across precisions, this can be a little cumbersome to work with from an author's perspective, however, as a user it works well and brings the added benefit that the entire libary is generated into a small set of files (one for each level of precision), making Abacus easy to embed into any C# project.
 
 ## About the name
 
