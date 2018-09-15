@@ -113,54 +113,54 @@ MVP release.
 
 - [x] Full support for `float` and `double`.
 - [x] Full test coverage.
-- [x] Proof of concept - Fixed 32 bit precision number data type.
+- [x] Proof of concept - Fixed 32 bit precision number data type (`Fixed32`).
 
 #### Version 1.0.x
 
 Full, tested support for a single fixed point real number.
 
-- [ ] Finalised Fixed 32 bit precision number data type.
+- [ ] Finalised Fixed 32 bit precision number data type (`Fixed32`).
 - [ ] Full unit test coverage configured with appropriate margins of error.
 
 #### Version 1.2.x
 
 New data types
 
-- [ ] Plane type.
-- [ ] Ray type.
+- [ ] Plane type (`Plane`).
+- [ ] Ray type (`Ray`).
 - [ ] Full unit test coverage.
 
 #### Version 1.2.x
 
 New 3D bounding data types.
 
-- [ ] Box type.
-- [ ] Sphere type.
-- [ ] Frustum type.
+- [ ] Box type (`Box`).
+- [ ] Sphere type (`Sphere`).
+- [ ] Frustum type (`Frustum`).
 - [ ] Full unit test coverage.
 
 #### Version 1.3.x
 
 New 2D bounding data types.
 
-- [ ] Triangle type.
-- [ ] Quad type.
+- [ ] Triangle type (`Triangle`).
+- [ ] Quad type (`Quad`).
 - [ ] Full unit test coverage.
 
 #### Version 1.4.x
 
 Increased support for fixed point.
 
-- [ ] Fixed 64 bit precision number data type.
-- [ ] Fixed 128 bit precision number data type.
+- [ ] Fixed 64 bit precision number data type (`Fixed64`).
+- [ ] Fixed 128 bit precision number data type (`Fixed128`).
 - [ ] Full unit test coverage configured with appropriate margins of error.
 
 #### Version 1.5.x
 
 Additional support for floating point.
 
-- [ ] Half precision floating point number data type.
-- [ ] Quadruple precision floating point number data type.
+- [ ] Half precision floating point number data type (`Float16`).
+- [ ] Quadruple precision floating point number data type (`Float128`).
 - [ ] Full unit test coverage configured with appropriate margins of error.
 
 ## Donate
