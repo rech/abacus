@@ -105,9 +105,11 @@ class Program
 
 ## Roadmap
 
-This roadmap gives some insight into what's next for the project.  We'd like to spend more time working on this project and get Abacus to version 1.2.x; if this is something you'd like to see happen too please show your support for the project by giving it a Github star.
+This roadmap gives some insight into what's next for the project.  We'd like to spend more time working on this project and get Abacus to version 1.2.x; if this is something you'd like to see happen too please show your support for the project by giving it a Github star and let us know on [Gitter][chat].
 
 #### Version 0.9.x [COMPLETE]
+
+MVP release.
 
 - [x] Full support for `float` and `double`.
 - [x] Full test coverage.
@@ -115,16 +117,47 @@ This roadmap gives some insight into what's next for the project.  We'd like to 
 
 #### Version 1.0.x
 
+Full, tested support for a single fixed point real number.
+
 - [ ] Finalised Fixed 32 bit precision number data type.
 - [ ] Full unit test coverage configured with appropriate margins of error.
 
-#### Version 1.1.x
+#### Version 1.2.x
+
+New data types
+
+- [ ] Plane type.
+- [ ] Ray type.
+- [ ] Full unit test coverage.
+
+#### Version 1.2.x
+
+New 3D bounding data types.
+
+- [ ] Box type.
+- [ ] Sphere type.
+- [ ] Frustum type.
+- [ ] Full unit test coverage.
+
+#### Version 1.3.x
+
+New 2D bounding data types.
+
+- [ ] Triangle type.
+- [ ] Quad type.
+- [ ] Full unit test coverage.
+
+#### Version 1.4.x
+
+Increased support for fixed point.
 
 - [ ] Fixed 64 bit precision number data type.
 - [ ] Fixed 128 bit precision number data type.
 - [ ] Full unit test coverage configured with appropriate margins of error.
 
-#### Version 1.2.x
+#### Version 1.5.x
+
+Additional support for floating point.
 
 - [ ] Half precision floating point number data type.
 - [ ] Quadruple precision floating point number data type.
