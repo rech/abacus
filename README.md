@@ -7,7 +7,9 @@
 
 ## Overview
 
-Abacus is a zero-dependency cross-precision 3D maths library for .NET and Mono, built with a primary focus on performance and efficiency.  Abacus is ideal for use developing real-time 3D applications and deterministic network simulations.
+Abacus is a zero-dependency cross-precision 3D maths library for .NET and Mono, built with a primary focus on performance and efficiency.  Abacus is ideal for use developing real-time 3D applications and deterministic network simulations.  
+
+Documentation for Abacus can be found [here][docs].
 
 ## Why?
 
@@ -162,6 +164,6 @@ limitations under the License.
 [br]: https://en.wikipedia.org/wiki/Black_Rock_Studio
 [status]: https://travis-ci.org/sungiant/abacus
 [chat]: https://gitter.im/sungiant/abacus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-
+[docs]: http://sungiant.github.io/abacus/annotated.html
 
 
