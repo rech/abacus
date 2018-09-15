@@ -7,7 +7,7 @@
 
 ## Overview
 
-Abacus is a zero-dependency cross-precision 3D maths library for .NET and Mono, built with a primary focus on performance and efficiency.  Abacus is ideal for use developing real-time 3D applications and deterministic network simulations.  
+Abacus is a zero-dependency cross-precision 3D maths library for .NET, Mono and .NET Core, built with a primary focus on performance and efficiency.  Abacus is ideal for use developing real-time 3D applications and deterministic network simulations.  
 
 Documentation for Abacus can be found [here][docs].
 
@@ -26,7 +26,7 @@ Abacus is available as a stand-alone library via [nuget][nuget].  Here's an exam
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
-  <package id="Abacus" version="0.9.2" targetFramework="net45" />
+  <package id="Abacus" version="0.9.2"/>
 </packages>
 ```
 
