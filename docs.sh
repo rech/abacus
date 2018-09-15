@@ -26,7 +26,7 @@ mv docs/html/* temp/
 
 cd temp
 
-if [[ `git status --porcelain` ]] && [ -f "index.html" ]; then
+if [ -n "$(git status --porcelain)" ] && [ -f "index.html" ]; then
     echo 'Uploading documentation to the gh-pages branch...'
     git add --all
     git commit -m "Deploy code docs to GitHub Pages Travis build: ${TRAVIS_BUILD_NUMBER}" -m "Commit: ${TRAVIS_COMMIT}"
