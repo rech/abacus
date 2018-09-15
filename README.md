@@ -163,10 +163,6 @@ Additional support for floating point.
 - [ ] Quadruple precision floating point number data type (`Float128`).
 - [ ] Full unit test coverage configured with appropriate margins of error.
 
-## Donate
-
-[![Become a patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sungiant)
-
 ## Technical Details
 
 Authoring a consistent API for Abacus across multiple levels of precision presents techinical challenge because the C# language has limited support for experessing constraints for generics; for this reason Abacus has been built using a templatization mechanism to ensure a consitent API across precisions, this can be a little cumbersome to work with from an author's perspective, however, as a user it works well and brings the added benefit that the entire libary is generated into a small set of files (one for each level of precision), making Abacus easy to embed into any C# project.
@@ -178,6 +174,10 @@ Abacus is named after a maths library that Ash worked with in the past when he w
 ## Contributing
 
 If you find a bug or have an issue please reach out via the GitHub Issue tracking system.  If you are using Abacus in a project of you own please show your support and let us know on [Gitter][chat].
+
+## Donate
+
+[![Become a patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sungiant)
 
 ## License
 
