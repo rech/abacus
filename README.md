@@ -13,9 +13,9 @@ Documentation for Abacus can be found [here][docs].
 
 ## Why?
 
-Remember [XNA][xna]?  It was a popular framework for building games and 3D applications using C#; part of the framework consisted of an excellent maths library for use with floating point numbers.
+Microsoft's [XNA][xna] was a popular framework for building games and 3D applications using C#; part of the framework consisted of an excellent maths library for use with floating point numbers.
 
-On a number of occasions we found ourselves wanting to use XNA's maths library in C# projects of our own, yet we didn't want to be tied to the prerequisites imposed by XNA.  We also wanted the ability to use the same set of functionality with with differing levels of precision, i.e. a library that would expose the same API for working with 32-bit floating point numbers as it did for working with 64-bit floating point numbers and even 64-bit fixed point numbers.
+On a number of occasions I found myself wanting to use XNA's maths library in C# projects of my own, yet I didn't want to be tied to the prerequisites imposed by XNA.  I also wanted the ability to use the same set of functionality with with differing levels of precision, i.e. a library that would expose the same API for working with 32-bit floating point numbers as it did for working with 64-bit floating point numbers and even 64-bit fixed point numbers.
 
 Abacus aims to provide all of the features of the XNA maths library whilst also supporting multiple levels of precision.
 
@@ -170,10 +170,6 @@ Authoring a consistent API for Abacus across multiple levels of precision presen
 ## Contributing
 
 If you find a bug or have an issue please reach out via the GitHub Issue tracking system.  If you are using Abacus in a project of you own please show your support and let us know on [Gitter][chat].
-
-## Donate
-
-[![Become a patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sungiant)
 
 ## About the name
 
