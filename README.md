@@ -1,9 +1,10 @@
 # Abacus
 
-[![Build Status](https://travis-ci.org/sungiant/abacus.png?branch=master)][status]
-[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)][mit]
-[![Nuget Version](https://img.shields.io/nuget/v/Abacus.svg)][nuget]
+[![Build Status](https://img.shields.io/travis/sungiant/abacus)][status]
+[![License](https://img.shields.io/github/license/sungiant/abacus)][mit]
+[![Nuget Version](https://img.shields.io/nuget/v/Abacus)][nuget]
 [![Nuget Downloads](https://img.shields.io/nuget/dt/Abacus)][nuget]
+
 
 ## Overview
 
